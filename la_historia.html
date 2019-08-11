@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="node_modules/lity/dist/lity.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="node_modules/lightbox2/dist/css/lightbox.min.css">
+    <link title="timeline-styles" rel="stylesheet" href="https://cdn.knightlab.com/libs/timeline3/latest/css/timeline.css">
+    <link rel="stylesheet" href="css/style.css" crossorigin="anonymous">
+    <title>Las cifras | Historias sobre mi piel</title>
+</head>
+
+<body>
+    <div class="loading"><img src="images/logo.png" alt="Historias sobre mi piel" /></div>
+    <div class="message"></div>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="index.html"><img src="images/logo.png" class="img-fluid" alt="Historias sobre mi piel" /></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item text-center active">
+                    <a class="nav-link" href="agua_de_dios.html">Agua de Dios</a>
+                </li>
+                <li class="nav-item text-center">
+                    <a class="nav-link" href="el_rechazo.html">El rechazo</a>
+                </li>
+                <li class="nav-item text-center">
+                    <a class="nav-link" href="la_exclusion.html">La exclusión</a>
+                </li>
+                <li class="nav-item text-center">
+                    <a class="nav-link" href="las_cifras.html">Las cifras</a>
+                </li>
+                <li class="nav-item text-center">
+                    <a class="nav-link active" href="la_historia.html">La historia</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div id='timeline-embed' style="width: 100%; height: 600px"></div>
+
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script src="node_modules/jquery/dist/jquery.min.js" crossorigin="anonymous"></script>
+    <script src="node_modules/popper.js/dist/popper.min.js" crossorigin="anonymous"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js" crossorigin="anonymous"></script>
+    <script src="node_modules/lity/dist/lity.min.js" crossorigin="anonymous"></script>
+    <script src="node_modules/lightbox2/dist/js/lightbox.min.js" crossorigin="anonymous"></script>
+    <script src="node_modules/ion-sound/js/ion.sound.min.js"></script>
+    <script src="https://cdn.knightlab.com/libs/timeline3/latest/js/timeline.js"></script>
+    <script src="js/scripts.js" crossorigin="anonymous"></script>
+    <script>
+        var additionalOptions = {
+            default_bg_color: {
+                r: 0,
+                g: 0,
+                b: 0,
+                a: 0.3
+            },
+            timenav_height: 1
+        }
+        timeline = new TL.Timeline('timeline-embed',
+            'https://docs.google.com/spreadsheets/d/1mRP7D8e-WEbr4CK6uZ-2zfDCIPvvUMegrbbk7jDKQ8U/pubhtml', additionalOptions);
+    </script>
+</body>
+
+</html>
+
+</html>
